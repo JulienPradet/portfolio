@@ -1,0 +1,7 @@
+[
+	{ "format": "jpeg", "height": 300, "width": 212 },
+	{ "format": "jpeg", "height": 600, "width": 424 },
+	{ "format": "webp", "height": 300, "width": 212 },
+	{ "format": "webp", "height": 600, "width": 424 },
+	{ "format": "base64", "height": 6, "width": 4 }
+]
