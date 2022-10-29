@@ -40,6 +40,7 @@
         {editionNumber: 236, image: feather236, url: "https://www.fxhash.xyz/gentk/1122295"},
         {editionNumber: 252, image: feather252, url: "https://www.fxhash.xyz/gentk/1122312"},
     ]
+    let feathersUrl = "https://portfolio.julienpradet.fr/collections/as-light-as-a-feather/explorer"
 
     let featherSizes = "(min-width: 300px) 226px, 80vw";
 
@@ -57,6 +58,7 @@
         {editionNumber: 178, image: felure178, url: "https://www.fxhash.xyz/gentk/1173926"},
         {editionNumber: 222, image: felure222, url: "https://www.fxhash.xyz/gentk/1173970"},
     ]
+    let felureUrl = "https://portfolio.julienpradet.fr/collections/felure/explorer"
 </script>
 
 <Headline headline="Hi, I'm Julien&nbsp;Pradet," subtitle="nice to meet you :)" />
@@ -72,6 +74,7 @@
 	<article class="creation">
 		<h3>Fêlure</h3>
 		<p>September 2022 on <a href="https://www.fxhash.xyz/generative/slug/felure">fxhash</a></p>
+        <p><a href={felureUrl}>Explore collection</a></p>
 
 		<ul>
             {#each felureCollection as item, index}
@@ -88,7 +91,7 @@
             {/each}
 			<li>
 				<EditionMore
-                    url="https://www.fxhash.xyz/generative/slug/felure"
+                    url={felureUrl}
                     --aspect-ratio="{felureCollection[0].image.width} / {felureCollection[0].image.height}"
                     --height="{felureCollection[0].image.height}px"
                 />
@@ -99,6 +102,7 @@
 	<article class="creation">
 		<h3>As Light As A Feather</h3>
 		<p>August 2022 on <a href="https://www.fxhash.xyz/generative/slug/as-light-as-a-feather">fxhash</a></p>
+        <p><a href={feathersUrl}>Explore collection</a></p>
 
 		<ul>
             {#each featherCollection as item}
@@ -114,7 +118,7 @@
             {/each}
 			<li>
 				<EditionMore
-                    url="https://www.fxhash.xyz/generative/slug/as-light-as-a-feather"
+                    url={feathersUrl}
                     --aspect-ratio="{featherCollection[0].image.width} / {featherCollection[0].image.height}"
                     --height="{featherCollection[0].image.height}px"
                 />
