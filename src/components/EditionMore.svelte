@@ -4,7 +4,7 @@
 
 <a href={url}>
 	<span class="img" aria-hidden>+</span>
-	<span class="caption"> See all the collection </span>
+	<span class="caption">Explore the collection </span>
 </a>
 
 <style>

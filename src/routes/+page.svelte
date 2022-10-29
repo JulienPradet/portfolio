@@ -44,6 +44,7 @@
 
     let featherSizes = "(min-width: 300px) 226px, 80vw";
 
+    let felureUrl = "https://portfolio.julienpradet.fr/collections/felure/explorer"
     let felureCollection = [
         {editionNumber: preview, image: felurePreview, url: "https://www.fxhash.xyz/gentk/1173750"},
         {editionNumber: 3, image: felure3, url: "https://www.fxhash.xyz/gentk/1173750"},
@@ -58,7 +59,6 @@
         {editionNumber: 178, image: felure178, url: "https://www.fxhash.xyz/gentk/1173926"},
         {editionNumber: 222, image: felure222, url: "https://www.fxhash.xyz/gentk/1173970"},
     ]
-    let felureUrl = "https://portfolio.julienpradet.fr/collections/felure/explorer"
 </script>
 
 <Headline headline="Hi, I'm Julien&nbsp;Pradet," subtitle="nice to meet you :)" />
@@ -72,9 +72,11 @@
 	<h2>Collections</h2>
 
 	<article class="creation">
-		<h3>Fêlure</h3>
-		<p>September 2022 on <a href="https://www.fxhash.xyz/generative/slug/felure">fxhash</a></p>
-        <p><a href={felureUrl}>Explore collection</a></p>
+		<h3>
+            Fêlure
+        </h3>
+        <p><a href={felureUrl}>Explore the 256 iterations</a></p>
+		<p>Published in September 2022 on <a href="https://www.fxhash.xyz/generative/slug/felure">fxhash</a></p>
 
 		<ul>
             {#each felureCollection as item, index}
@@ -101,8 +103,8 @@
 
 	<article class="creation">
 		<h3>As Light As A Feather</h3>
-		<p>August 2022 on <a href="https://www.fxhash.xyz/generative/slug/as-light-as-a-feather">fxhash</a></p>
-        <p><a href={feathersUrl}>Explore collection</a></p>
+        <p><a href={feathersUrl}>Explore the 256 iterations</a></p>
+		<p>Published in August 2022 on <a href="https://www.fxhash.xyz/generative/slug/as-light-as-a-feather">fxhash</a></p>
 
 		<ul>
             {#each featherCollection as item}
@@ -161,9 +163,13 @@
 	}
 
 	section p {
-		margin: 0.25rem 0 1rem;
+		margin: 0.25rem 0 0;
 		color: #605d59;
 	}
+
+    section p + p {
+        margin-bottom: 1rem;
+    }
 
 	.creation {
 		margin: 2rem 0;
